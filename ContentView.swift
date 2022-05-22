@@ -12,12 +12,8 @@ struct ContentView: View {
     
     @State var titleText : String = "Deneme title"
     @State var descText : String = "Deneme desc"
-    @State var newsArray : [String] = []
     @State var index = -1
-    @State var imageString : String = ""
-    @State var titleList = []
-    let blueColor = Color(red: 14, green: 22, blue: 78)
-    
+    @State var imageString : String = ""    
     let urlString = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=c92e234b4f294ec8a3fae76a85457733"
     
     func getData(from url : String) {
